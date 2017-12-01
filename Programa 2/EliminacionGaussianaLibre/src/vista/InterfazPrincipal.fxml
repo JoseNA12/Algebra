@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="488.0" prefWidth="753.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.InterfazPrincipal">
+   <children>
+      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="753.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Archivo">
+            <items>
+                  <Menu fx:id="menu_GenerarNuevaMatriz" mnemonicParsing="false" text="Generar Nueva Matriz">
+                    <items>
+                      <MenuItem fx:id="menuItem_tamanio2x2" mnemonicParsing="false" onAction="#DefinirTamanioMatriz2x2" text="  2x2  " />
+                        <MenuItem fx:id="menuItem_tamanio3x3" mnemonicParsing="false" onAction="#DefinirTamanioMatriz3x3" text="  3x3  " />
+                        <MenuItem fx:id="menuItem_tamanio4x4" mnemonicParsing="false" onAction="#DefinirTamanioMatriz4x4" text="  4x4  " />
+                        <MenuItem fx:id="menuItem_tamanio5x5" mnemonicParsing="false" onAction="#DefinirTamanioMatriz5x5" text="  5x5  " />
+                    </items>
+                  </Menu>
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem fx:id="item_NuevaMatriz1" mnemonicParsing="false" onAction="#ResolverSistema" text="Resolver Sistema" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <GridPane fx:id="gridPane_Matriz" disable="true" layoutX="35.0" layoutY="91.0" prefHeight="161.0" prefWidth="330.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.0" minWidth="10.0" prefWidth="61.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="140.0" minWidth="10.0" prefWidth="10.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="216.0" minWidth="10.0" prefWidth="61.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="292.0" minWidth="10.0" prefWidth="10.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="499.0" minWidth="10.0" prefWidth="61.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="499.0" minWidth="10.0" prefWidth="10.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="499.0" minWidth="10.0" prefWidth="61.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="499.0" minWidth="10.0" prefWidth="10.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="499.0" minWidth="10.0" prefWidth="61.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="499.0" minWidth="10.0" prefWidth="10.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="499.0" minWidth="10.0" prefWidth="61.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TextField fx:id="textField_Casilla_2_0" prefHeight="25.0" prefWidth="59.0" GridPane.rowIndex="2" />
+            <TextField fx:id="textField_Casilla_3_0" prefHeight="25.0" prefWidth="60.0" GridPane.rowIndex="3" />
+            <TextField fx:id="textField_Casilla_4_0" prefHeight="25.0" prefWidth="60.0" GridPane.rowIndex="4" />
+            <TextField fx:id="textField_Casilla_1_0" prefHeight="25.0" prefWidth="60.0" GridPane.rowIndex="1" />
+            <TextField fx:id="textField_Casilla_1_1" prefHeight="25.0" prefWidth="60.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <TextField fx:id="textField_Casilla_2_1" prefHeight="25.0" prefWidth="60.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <TextField fx:id="textField_Casilla_3_1" prefHeight="25.0" prefWidth="60.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <TextField fx:id="textField_Casilla_4_1" prefHeight="25.0" prefWidth="60.0" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <TextField fx:id="textField_Casilla_1_2" prefHeight="25.0" prefWidth="63.0" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+            <TextField fx:id="textField_Casilla_2_2" prefHeight="25.0" prefWidth="63.0" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+            <TextField fx:id="textField_Casilla_3_2" prefHeight="25.0" prefWidth="63.0" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+            <TextField fx:id="textField_Casilla_4_2" prefHeight="25.0" prefWidth="63.0" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+            <TextField fx:id="textField_Casilla_1_3" prefHeight="25.0" prefWidth="63.0" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+            <TextField fx:id="textField_Casilla_2_3" prefHeight="25.0" prefWidth="63.0" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+            <TextField fx:id="textField_Casilla_3_3" prefHeight="25.0" prefWidth="63.0" GridPane.columnIndex="6" GridPane.rowIndex="3" />
+            <TextField fx:id="textField_Casilla_4_3" prefHeight="25.0" prefWidth="63.0" GridPane.columnIndex="6" GridPane.rowIndex="4" />
+            <TextField fx:id="textField_Casilla_1_4" prefHeight="25.0" prefWidth="63.0" GridPane.columnIndex="8" GridPane.rowIndex="1" />
+            <TextField fx:id="textField_Casilla_2_4" prefHeight="25.0" prefWidth="63.0" GridPane.columnIndex="8" GridPane.rowIndex="2" />
+            <TextField fx:id="textField_Casilla_3_4" prefHeight="25.0" prefWidth="63.0" GridPane.columnIndex="8" GridPane.rowIndex="3" />
+            <TextField fx:id="textField_Casilla_4_4" prefHeight="25.0" prefWidth="63.0" GridPane.columnIndex="8" GridPane.rowIndex="4" />
+            <TextField fx:id="textField_Casilla_1_5" prefHeight="25.0" prefWidth="60.0" GridPane.columnIndex="10" GridPane.rowIndex="1" />
+            <TextField fx:id="textField_Casilla_2_5" prefHeight="25.0" prefWidth="63.0" GridPane.columnIndex="10" GridPane.rowIndex="2" />
+            <TextField fx:id="textField_Casilla_3_5" prefHeight="25.0" prefWidth="63.0" GridPane.columnIndex="10" GridPane.rowIndex="3" />
+            <TextField fx:id="textField_Casilla_4_5" prefHeight="25.0" prefWidth="63.0" GridPane.columnIndex="10" GridPane.rowIndex="4" />
+            <TextField fx:id="textField_Casilla_0_0" prefHeight="25.0" prefWidth="60.0" />
+            <TextField fx:id="textField_Casilla_0_1" prefHeight="25.0" prefWidth="60.0" GridPane.columnIndex="2" />
+            <TextField fx:id="textField_Casilla_0_2" prefHeight="25.0" prefWidth="60.0" GridPane.columnIndex="4" />
+            <TextField fx:id="textField_Casilla_0_3" prefHeight="25.0" prefWidth="60.0" GridPane.columnIndex="6" />
+            <TextField fx:id="textField_Casilla_0_4" prefHeight="25.0" prefWidth="60.0" GridPane.columnIndex="8" />
+            <TextField fx:id="textField_Casilla_0_5" prefHeight="25.0" prefWidth="60.0" GridPane.columnIndex="10" />
+         </children>
+      </GridPane>
+      <Text layoutX="35.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Matriz ampliada inicial:" wrappingWidth="156.73828125">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text layoutX="35.0" layoutY="285.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Forma de las ecuaciones:" wrappingWidth="145.419921875">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Separator layoutX="414.0" layoutY="53.0" orientation="VERTICAL" prefHeight="409.0" prefWidth="3.0" />
+      <TextArea fx:id="textArea_Resultado" editable="false" layoutX="444.0" layoutY="94.0" prefHeight="368.0" prefWidth="276.0">
+         <font>
+            <Font size="13.0" />
+         </font></TextArea>
+      <Text layoutX="444.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Resultado:">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fx:id="text_Ecuacion_1" layoutX="35.0" layoutY="325.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" " wrappingWidth="276.13671875">
+         <font>
+            <Font size="13.0" />
+         </font></Text>
+      <Text fx:id="text_Ecuacion_2" layoutX="35.0" layoutY="356.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" " wrappingWidth="276.13671875">
+         <font>
+            <Font size="13.0" />
+         </font></Text>
+      <Text fx:id="text_Ecuacion_3" layoutX="35.0" layoutY="390.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" " wrappingWidth="276.13671875">
+         <font>
+            <Font size="13.0" />
+         </font></Text>
+      <Text fx:id="text_Ecuacion_4" layoutX="35.0" layoutY="424.0" strokeType="OUTSIDE" strokeWidth="0.0" text="  " wrappingWidth="276.13671875">
+         <font>
+            <Font size="13.0" />
+         </font></Text>
+      <Text fx:id="text_Ecuacion_5" layoutX="35.0" layoutY="457.0" strokeType="OUTSIDE" strokeWidth="0.0" text="  " wrappingWidth="276.13671875">
+         <font>
+            <Font size="13.0" />
+         </font></Text>
+   </children>
+</AnchorPane>

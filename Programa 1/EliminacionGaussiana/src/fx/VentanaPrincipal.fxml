@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="mainLayout" prefHeight="535.0" prefWidth="913.0" style="-fx-background-color: #81F7D8;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="source.Main">
+   <children>
+      <Separator layoutX="467.0" layoutY="19.0" orientation="VERTICAL" prefHeight="485.0" prefWidth="4.0" />
+      <TextField fx:id="campoTexto2" layoutX="141.0" layoutY="149.0" prefHeight="31.0" prefWidth="58.0" visible="false" />
+      <TextField fx:id="campoTexto5" layoutX="352.0" layoutY="149.0" prefHeight="31.0" prefWidth="58.0" visible="false" />
+      <TextField fx:id="campoTexto4" layoutX="280.0" layoutY="149.0" prefHeight="31.0" prefWidth="58.0" visible="false" />
+      <TextField fx:id="campoTexto3" layoutX="211.0" layoutY="149.0" prefHeight="31.0" prefWidth="58.0" visible="false" />
+      <TextField fx:id="campoTexto1" layoutX="75.0" layoutY="149.0" prefHeight="31.0" prefWidth="58.0" visible="false" />
+      <TextField fx:id="campoTexto16" layoutX="75.0" layoutY="275.0" prefHeight="31.0" prefWidth="58.0" visible="false" />
+      <TextField fx:id="campoTexto21" layoutX="75.0" layoutY="315.0" prefHeight="31.0" prefWidth="58.0" visible="false" />
+      <TextField fx:id="campoTexto11" layoutX="75.0" layoutY="233.0" prefHeight="31.0" prefWidth="58.0" visible="false" />
+      <TextField fx:id="campoTexto6" layoutX="75.0" layoutY="193.0" prefHeight="31.0" prefWidth="58.0" visible="false" />
+      <TextField fx:id="campoTexto7" layoutX="141.0" layoutY="194.0" prefHeight="31.0" prefWidth="58.0" visible="false" />
+      <TextField fx:id="campoTexto12" layoutX="141.0" layoutY="234.0" prefHeight="31.0" prefWidth="58.0" visible="false" />
+      <TextField fx:id="campoTexto22" layoutX="141.0" layoutY="316.0" prefHeight="31.0" prefWidth="58.0" visible="false" />
+      <TextField fx:id="campoTexto17" layoutX="141.0" layoutY="276.0" prefHeight="31.0" prefWidth="58.0" visible="false" />
+      <TextField fx:id="campoTexto8" layoutX="211.0" layoutY="195.0" prefHeight="31.0" prefWidth="58.0" visible="false" />
+      <TextField fx:id="campoTexto13" layoutX="211.0" layoutY="235.0" prefHeight="31.0" prefWidth="58.0" visible="false" />
+      <TextField fx:id="campoTexto23" layoutX="211.0" layoutY="317.0" prefHeight="31.0" prefWidth="58.0" visible="false" />
+      <TextField fx:id="campoTexto18" layoutX="211.0" layoutY="277.0" prefHeight="31.0" prefWidth="58.0" visible="false" />
+      <TextField fx:id="campoTexto9" layoutX="280.0" layoutY="196.0" prefHeight="31.0" prefWidth="58.0" visible="false" />
+      <TextField fx:id="campoTexto14" layoutX="280.0" layoutY="236.0" prefHeight="31.0" prefWidth="58.0" visible="false" />
+      <TextField fx:id="campoTexto24" layoutX="280.0" layoutY="318.0" prefHeight="31.0" prefWidth="58.0" visible="false" />
+      <TextField fx:id="campoTexto19" layoutX="280.0" layoutY="278.0" prefHeight="31.0" prefWidth="58.0" visible="false" />
+      <TextField fx:id="campoTexto10" layoutX="352.0" layoutY="197.0" prefHeight="31.0" prefWidth="58.0" style="-fx-background-color: ;" visible="false" />
+      <TextField fx:id="campoTexto15" layoutX="352.0" layoutY="237.0" prefHeight="31.0" prefWidth="58.0" style="-fx-background-color: ;" visible="false" />
+      <TextField fx:id="campoTexto25" layoutX="352.0" layoutY="319.0" prefHeight="31.0" prefWidth="58.0" style="-fx-background-color: ;" visible="false" />
+      <TextField fx:id="campoTexto20" layoutX="352.0" layoutY="279.0" prefHeight="31.0" prefWidth="58.0" style="-fx-background-color: ;" visible="false" />
+      <TextField fx:id="campoOE" layoutX="107.0" layoutY="391.0" promptText="Operacion Elemental" />
+      <Button fx:id="aplicarOE" layoutX="160.0" layoutY="439.0" mnemonicParsing="false" onAction="#recabarDatos" prefHeight="31.0" prefWidth="81.0" text="Aplicar" />
+      <Button fx:id="deshacerOE" layoutX="312.0" layoutY="439.0" mnemonicParsing="false" onAction="#Deshacer" text="Deshacer" />
+      <Button fx:id="botonCrearMatriz" layoutX="286.0" layoutY="79.0" mnemonicParsing="false" onAction="#crearMatriz" prefHeight="31.0" prefWidth="117.0" text="Crear Matriz" />
+      <TextField fx:id="numeroFilas" layoutX="80.0" layoutY="79.0" onKeyTyped="#soloNumeros" prefHeight="31.0" prefWidth="81.0" promptText="Fila" />
+      <TextField fx:id="numeroColumnas" layoutX="175.0" layoutY="79.0" onKeyTyped="#soloNumeros" prefHeight="31.0" prefWidth="81.0" promptText="Columna" />
+      <TextField fx:id="campoTexto201" layoutX="783.0" layoutY="284.0" prefHeight="31.0" prefWidth="58.0" visible="false" />
+      <TextField fx:id="campoTexto251" layoutX="783.0" layoutY="324.0" prefHeight="31.0" prefWidth="58.0" visible="false" />
+      <TextField fx:id="campoTexto151" layoutX="783.0" layoutY="242.0" prefHeight="31.0" prefWidth="58.0" visible="false" />
+      <TextField fx:id="campoTexto101" layoutX="783.0" layoutY="202.0" prefHeight="31.0" prefWidth="58.0" visible="false" />
+      <TextField fx:id="campoTexto191" layoutX="711.0" layoutY="283.0" prefHeight="31.0" prefWidth="58.0" visible="false" />
+      <TextField fx:id="campoTexto241" layoutX="711.0" layoutY="323.0" prefHeight="31.0" prefWidth="58.0" visible="false" />
+      <TextField fx:id="campoTexto141" layoutX="711.0" layoutY="241.0" prefHeight="31.0" prefWidth="58.0" visible="false" />
+      <TextField fx:id="campoTexto91" layoutX="711.0" layoutY="201.0" prefHeight="31.0" prefWidth="58.0" visible="false" />
+      <TextField fx:id="campoTexto181" layoutX="642.0" layoutY="282.0" prefHeight="31.0" prefWidth="58.0" visible="false" />
+      <TextField fx:id="campoTexto231" layoutX="642.0" layoutY="322.0" prefHeight="31.0" prefWidth="58.0" visible="false" />
+      <TextField fx:id="campoTexto131" layoutX="642.0" layoutY="240.0" prefHeight="31.0" prefWidth="58.0" visible="false" />
+      <TextField fx:id="campoTexto81" layoutX="642.0" layoutY="200.0" prefHeight="31.0" prefWidth="58.0" visible="false" />
+      <TextField fx:id="campoTexto171" layoutX="572.0" layoutY="281.0" prefHeight="31.0" prefWidth="58.0" visible="false" />
+      <TextField fx:id="campoTexto221" layoutX="572.0" layoutY="321.0" prefHeight="31.0" prefWidth="58.0" visible="false" />
+      <TextField fx:id="campoTexto121" layoutX="572.0" layoutY="239.0" prefHeight="31.0" prefWidth="58.0" visible="false" />
+      <TextField fx:id="campoTexto71" layoutX="572.0" layoutY="199.0" prefHeight="31.0" prefWidth="58.0" visible="false" />
+      <TextField fx:id="campoTexto61" layoutX="506.0" layoutY="198.0" prefHeight="31.0" prefWidth="58.0" visible="false" />
+      <TextField fx:id="campoTexto111" layoutX="506.0" layoutY="238.0" prefHeight="31.0" prefWidth="58.0" visible="false" />
+      <TextField fx:id="campoTexto211" layoutX="506.0" layoutY="320.0" prefHeight="31.0" prefWidth="58.0" visible="false" />
+      <TextField fx:id="campoTexto161" layoutX="506.0" layoutY="280.0" prefHeight="31.0" prefWidth="58.0" visible="false" />
+      <TextField fx:id="campoTexto110" layoutX="506.0" layoutY="154.0" prefHeight="31.0" prefWidth="58.0" visible="false" />
+      <TextField fx:id="campoTexto31" layoutX="642.0" layoutY="154.0" prefHeight="31.0" prefWidth="58.0" visible="false" />
+      <TextField fx:id="campoTexto41" layoutX="711.0" layoutY="154.0" prefHeight="31.0" prefWidth="58.0" visible="false" />
+      <TextField fx:id="campoTexto51" layoutX="783.0" layoutY="154.0" prefHeight="31.0" prefWidth="58.0" visible="false" />
+      <TextField fx:id="campoTexto26" layoutX="572.0" layoutY="154.0" onKeyTyped="#soloNumeros" prefHeight="31.0" prefWidth="58.0" visible="false" />
+      <Button fx:id="botonHistorial" layoutX="312.0" layoutY="391.0" mnemonicParsing="false" onAction="#historial" prefHeight="31.0" prefWidth="81.0" text="Historial" />
+      <Button fx:id="anteriorHistorial" layoutX="544.0" layoutY="391.0" mnemonicParsing="false" onAction="#Anterior" prefHeight="31.0" prefWidth="98.0" text="Anterior" visible="false" />
+      <Button fx:id="siguienteHistorial" layoutX="700.0" layoutY="391.0" mnemonicParsing="false" onAction="#Siguiente" prefHeight="31.0" prefWidth="98.0" text="Siguiente" visible="false" />
+      <Label fx:id="label1" layoutX="504.0" layoutY="47.0" text="Historial de cambios en la matriz" visible="false">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="MILabel" layoutX="497.0" layoutY="116.0" prefHeight="21.0" prefWidth="109.0" text="Matriz Inicial" visible="false" />
+      <Label fx:id="OpElemLabel" layoutX="504.0" layoutY="116.0" prefHeight="21.0" prefWidth="372.0" text="OpElemental: " visible="false" />
+      <MenuBar fx:id="MenuBarra" layoutY="-2.0" prefHeight="32.0" prefWidth="929.0">
+        <menus>
+          <Menu fx:id="AyudaMenu" mnemonicParsing="false" text="Ayuda">
+            <items>
+                  <MenuItem fx:id="GuiaUsuarioMenu" mnemonicParsing="false" onAction="#MostrarGuiaUsuario" text="Guia de usuario" />
+              <MenuItem fx:id="InformacionMenu" mnemonicParsing="false" onAction="#MostrarInformacion" text="Informacion" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>
